@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Submission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Name Submission Form</h1>
+        
+        <!-- Form Section -->
+        <div class="form-section">
+            <form id="nameForm">
+                <div class="form-group">
+                    <label for="nameInput">Enter Your Name:</label>
+                    <input type="text" id="nameInput" name="name" placeholder="Type your name here..." required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Name</button>
+            </form>
+        </div>
+
+        <!-- Names Display Section -->
+        <div class="names-section">
+            <h2>Submitted Names</h2>
+            <div class="names-count">
+                Total names: <span id="namesCount">0</span>
+            </div>
+            <ul id="namesList" class="names-list">
+                <!-- Names will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
